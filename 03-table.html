@@ -31,6 +31,34 @@
         font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        margin-top: 100px;
+        width: 800px;
+        /* border: 2px solid #343a40; */
+        justify-items: center;
+        border-collapse: collapse;
+      }
+      thead th {
+        background-color: #087f5b;
+        color: white;
+        font-size: 20px;
+        padding: 12px;
+        width: 25%;
+      }
+      td,
+      th {
+        /* border: solid 1px #343a40; */
+        padding: 16px 24px;
+        text-align: left;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f1f3f5;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #f8f9fa;
       }
     </style>
   </head>
@@ -45,6 +73,12 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <th>Width</th>
+          <td>80cm</td>
+          <td>60cm</td>
+          <td>220cm</td>
+        </tr>
         <tr>
           <th>Height</th>
           <td>80cm</td>
