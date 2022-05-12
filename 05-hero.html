@@ -24,11 +24,23 @@
       header {
         background-color: orangered;
         height: 100vh;
+        position: relative;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
       }
       .container {
         width: 900px;
         margin: 0 auto;
         /* background-color: red; */
+      }
+      .header-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: violet;
+        width: 900px;
+        transform: translate(-50%, -50%);
       }
       nav {
         padding: 20px;
@@ -81,15 +93,11 @@
         <div>NAVI</div>
       </nav>
 
-      <div class="container">
+      <div class="header-container">
         <h1>A healthy meal delivered to your door, every single day</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          voluptatem assumenda dolore dolorum suscipit. Esse similique adipisci
-          atque quaerat accusamus modi neque obcaecati quas, distinctio voluptas
-          minima ex voluptatum, facilis quibusdam quidem repudiandae nihil rerum
-          nostrum? Unde tempore, magnam id itaque nobis delectus! A magnam
-          impedit at porro ipsam. Aspernatur!
+          voluptatem assumenda dolore dolorum suscipit.
         </p>
         <a href="#" class="btn">Start eating well</a>
       </div>
