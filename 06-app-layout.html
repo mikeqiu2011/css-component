@@ -15,12 +15,22 @@
         font-family: sans-serif;
         color: #343a40;
         font-size: 24px;
+        text-align: center;
+        font-weight: bold;
 
         height: 100vh;
 
         display: grid;
         grid-template-columns: 80px 200px 1fr 200px;
         grid-template-rows: 80px 1fr;
+      }
+
+      nav,
+      menu,
+      section,
+      main,
+      aside {
+        padding: 24px;
       }
 
       nav {
@@ -36,18 +46,72 @@
       menu {
         background-color: #7048e8;
         grid-column: 2/-1;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
       }
 
       aside {
         background-color: #f1f3f5;
       }
+
+      .btn {
+        color: #fff;
+        background-color: #5f3dc4;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-trash {
+        background-color: #d6336c;
+      }
+
+      .email {
+        width: 150px;
+        height: 75px;
+        background-color: #ced4da;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: scroll;
+      }
     </style>
   </head>
   <body>
-    <nav>nav</nav>
-    <menu>Menu</menu>
-    <section>Inbox</section>
-    <main>Email</main>
+    <nav>Nav</nav>
+    <menu>
+      <div class="btn-common">
+        <button class="btn">New</button>
+        <button class="btn">Reply</button>
+        <button class="btn">Forward</button>
+        <button class="btn">Mark unread</button>
+      </div>
+      <button class="btn btn-trash">Trash</button>
+    </menu>
+    <section>
+      <p class="email">Email 1</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+      <p class="email">Email 2</p>
+    </section>
+    <main>Email view</main>
     <aside>Additonal info</aside>
   </body>
 </html>
